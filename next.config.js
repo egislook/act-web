@@ -2,8 +2,6 @@ const webpack = require('webpack')
 const assetPrefix = !process.env.NODE_ENV || ('production' === process.env.NODE_ENV) ? '/bet' : ''
 const withTM = require('next-transpile-modules')(['bet'])
 
-console.log({ assetPrefix }, process.env.NODE_ENV)
-
 module.exports = withTM({
   assetPrefix,
   env: { assetPrefix },

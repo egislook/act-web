@@ -1,8 +1,10 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { Elems } from 'bet'
+import Actheme from 'actheme'
 
 export default function App(props) {
+  console.log(Actheme)
   return (
     <View style={styles.container}>
       <Text accessibilityRole="header" style={styles.text}>
