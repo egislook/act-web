@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{"QN/8":function(n,o,t){(window.__NEXT_P=window.__NEXT_P||[]).push(["/alternate",function(){return t("vosU")}])},vosU:function(n,o,t){"use strict";t.r(o);var u=t("CFge");t.d(o,"default",(function(){return u.a}))}},[["QN/8",0,2,1,3]]]);
