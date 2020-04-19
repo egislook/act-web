@@ -9,10 +9,8 @@ function AlternateScreen(props) {
         React Native for Web & Next.js Alt
       </Text>
 
-      <Elems.Link href="/">
-        <Text style={styles.link} accessibilityRole="link">
-          Back to main screen
-        </Text>
+      <Elems.Link style={styles.link} href="/">
+        Back to Main Screen
       </Elems.Link>
 
       <View style={styles.textContainer}>

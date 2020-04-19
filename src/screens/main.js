@@ -2,16 +2,14 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { Elems } from 'bet'
 
-function MainScreen(props) {
+export default function App(props) {
   return (
     <View style={styles.container}>
       <Text accessibilityRole="header" style={styles.text}>
         React Native for Web & Next.js
       </Text>
-      <Elems.Link href="/alternate">
-        <Text style={styles.link} accessibilityRole="link">
-          A universal link
-        </Text>
+      <Elems.Link style={styles.link} href="/alternate">
+        Go to Alternate Screen
       </Elems.Link>
 
       <View style={styles.textContainer}>
@@ -22,8 +20,6 @@ function MainScreen(props) {
     </View>
   )
 }
-
-export default MainScreen
 
 const styles = StyleSheet.create({
   container: {
