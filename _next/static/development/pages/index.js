@@ -38407,7 +38407,7 @@ function MainScreen(props) {
       columnNumber: 7
     }
   }, "React Native for Web & Next.js"), __jsx(bet__WEBPACK_IMPORTED_MODULE_1__["Elems"].Link, {
-    style: Object(actheme__WEBPACK_IMPORTED_MODULE_2__["fustyle"])('c:blue'),
+    style: Object(actheme__WEBPACK_IMPORTED_MODULE_2__["style"])('c:blue'),
     href: "/alternate",
     __self: this,
     __source: {
@@ -38443,7 +38443,7 @@ var Styled = actheme__WEBPACK_IMPORTED_MODULE_2___default.a.create({
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!*************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CEgis%5CDesktop%5CDEV%5C247kh%5Cweb%5Cpages%5Cindex.js ***!
   \*************************************************************************************************************************************/
@@ -38466,5 +38466,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
