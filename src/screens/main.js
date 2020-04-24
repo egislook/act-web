@@ -1,44 +1,30 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
 import { Elems } from 'bet'
-import Actheme from 'actheme'
+import Actheme, { fustyle } from 'actheme'
 
-export default function App(props) {
-  console.log(Actheme)
+function MainScreen(props) {
   return (
-    <View style={styles.container}>
-      <Text accessibilityRole="header" style={styles.text}>
+    <Styled.Wrap>
+      <Styled.Text accessibilityRole="header">
         React Native for Web & Next.js
-      </Text>
-      <Elems.Link style={styles.link} href="/alternate">
+      </Styled.Text>
+      <Elems.Link style={fustyle('c:blue')} href="/alternate">
         Go to Alternate Screen
       </Elems.Link>
 
-      <View style={styles.textContainer}>
-        <Text accessibilityRole="header" aria-level="2" style={styles.text}>
+      <Styled.Cont>
+        <Styled.Text accessibilityRole="header" aria-level="2">
           Subheader
-        </Text>
-      </View>
-    </View>
+        </Styled.Text>
+      </Styled.Cont>
+    </Styled.Wrap>
   )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    flexGrow: 1,
-    justifyContent: 'center',
-  },
-  link: {
-    color: 'blue',
-  },
-  textContainer: {
-    alignItems: 'center',
-    marginTop: 16,
-  },
-  text: {
-    alignItems: 'center',
-    fontSize: 24,
-    marginBottom: 24,
-  },
+export default MainScreen
+
+const Styled = Actheme.create({
+  Wrap: 'ai,jc:c fg:1',
+  Cont: 'mt:s4',
+  Text: 'fs,mb:s6 fs:24'
 })
