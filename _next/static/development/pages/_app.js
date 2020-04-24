@@ -33131,13 +33131,8 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 var _getConfig = next_config__WEBPACK_IMPORTED_MODULE_10___default()(),
     _getConfig$publicRunt = _getConfig.publicRuntimeConfig,
     publicRuntimeConfig = _getConfig$publicRunt === void 0 ? {} : _getConfig$publicRunt; // <ActStore init={init} initialState={{ ready: true }} config={config} router={router} actions={actions} name="App" />
+// typeof window !== 'undefined' && Actheme.set({ color: { blue: 'yellow' }})
 
-
-actheme__WEBPACK_IMPORTED_MODULE_11___default.a.set({
-  color: {
-    blue: 'yellow'
-  }
-});
 
 var _default = /*#__PURE__*/function (_App) {
   Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(_default, _App);
