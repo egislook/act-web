@@ -1,6 +1,6 @@
 import React from 'react'
 import { Elems } from 'bet'
-import Actheme, { fustyle } from 'actheme'
+import Actheme, { style } from 'actheme'
 
 function MainScreen(props) {
   return (
@@ -8,7 +8,7 @@ function MainScreen(props) {
       <Styled.Text accessibilityRole="header">
         React Native for Web & Next.js
       </Styled.Text>
-      <Elems.Link style={fustyle('c:blue')} href="/alternate">
+      <Elems.Link style={style('c:blue')} href="/alternate">
         Go to Alternate Screen
       </Elems.Link>
 

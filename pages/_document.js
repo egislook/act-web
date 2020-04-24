@@ -1,7 +1,7 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import React from 'react'
 import * as ReactNative from 'react-native'
-import Actheme from 'actheme'
+import { style } from 'actheme'
 
 // Force Next-generated DOM elements to fill their parent's height
 const __html = `#__next { display: flex; flex-direction: column; height: 100%; }`
@@ -10,8 +10,6 @@ const config = {
   name: 'with-react-native-web',
   displayName: 'with-react-native-web'
 }
-
-Actheme.set()
 
 export default class MyDocument extends Document {
   static async getInitialProps({ renderPage }) {
@@ -23,11 +21,11 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html style={Actheme.style('h:100%')}>
+      <html style={style('h:100%')}>
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
-        <body style={Actheme.style('h:100% of:hd')}>
+        <body style={style('h:100% of:hd')}>
           <Main />
           <NextScript />
         </body>
