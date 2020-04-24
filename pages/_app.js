@@ -7,7 +7,7 @@ import Actheme from 'actheme'
 const { publicRuntimeConfig = {} } = getConfig()
 // <ActStore init={init} initialState={{ ready: true }} config={config} router={router} actions={actions} name="App" />
 
-Actheme.set({ color: { blue: 'yellow' }})
+// typeof window !== 'undefined' && Actheme.set({ color: { blue: 'yellow' }})
 
 export default class extends App {
 	render() {

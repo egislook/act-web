@@ -5,7 +5,7 @@ import Actheme, { style } from 'actheme'
 function MainScreen(props) {
   return (
     <Styled.Wrap>
-      <Styled.Text accessibilityRole="header">
+      <Styled.Text>
         React Native for Web & Next.js
       </Styled.Text>
       <Elems.Link style={style('c:blue')} href="/alternate">
@@ -13,7 +13,7 @@ function MainScreen(props) {
       </Elems.Link>
 
       <Styled.Cont>
-        <Styled.Text accessibilityRole="header" aria-level="2">
+        <Styled.Text aria-level="2">
           Subheader
         </Styled.Text>
       </Styled.Cont>

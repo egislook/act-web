@@ -1,45 +1,74 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { Elems } from 'bet'
+import Actheme, { style } from 'actheme'
 
-function AlternateScreen(props) {
+function MainScreen(props) {
   return (
-    <View style={styles.container}>
-      <Text accessibilityRole="header" style={styles.text}>
-        React Native for Web & Next.js Alt
-      </Text>
-
-      <Elems.Link style={styles.link} href="/">
-        Back to Main Screen
+    <Styled.Wrap>
+      <Styled.Text>
+        React Native for Web & Next.js
+      </Styled.Text>
+      <Elems.Link style={style('c:blue')} href="/">
+        Go back to Main Screen
       </Elems.Link>
 
-      <View style={styles.textContainer}>
-        <Text accessibilityRole="header" aria-level="2" style={styles.text}>
+      <Styled.Cont>
+        <Styled.Text aria-level="2">
           Subheader
-        </Text>
-      </View>
-    </View>
+        </Styled.Text>
+      </Styled.Cont>
+    </Styled.Wrap>
   )
 }
 
-export default AlternateScreen
+export default MainScreen
 
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    flexGrow: 1,
-    justifyContent: 'center',
-  },
-  link: {
-    color: 'blue',
-  },
-  textContainer: {
-    alignItems: 'center',
-    marginTop: 16,
-  },
-  text: {
-    alignItems: 'center',
-    fontSize: 24,
-    marginBottom: 24,
-  },
+const Styled = Actheme.create({
+  Wrap: 'ai,jc:c fg:1',
+  Cont: 'mt:s4',
+  Text: 'fs,mb:s6 fs:24'
 })
+
+
+// function AlternateScreen(props) {
+//   return (
+//     <View style={styles.container}>
+//       <Text accessibilityRole="header" style={styles.text}>
+//         React Native for Web & Next.js Alt
+//       </Text>
+//
+//       <Elems.Link style={styles.link} href="/">
+//         Back to Main Screen
+//       </Elems.Link>
+//
+//       <View style={styles.textContainer}>
+//         <Text accessibilityRole="header" aria-level="2" style={styles.text}>
+//           Subheader
+//         </Text>
+//       </View>
+//     </View>
+//   )
+// }
+//
+// export default AlternateScreen
+//
+// const styles = StyleSheet.create({
+//   container: {
+//     alignItems: 'center',
+//     flexGrow: 1,
+//     justifyContent: 'center',
+//   },
+//   link: {
+//     color: 'blue',
+//   },
+//   textContainer: {
+//     alignItems: 'center',
+//     marginTop: 16,
+//   },
+//   text: {
+//     alignItems: 'center',
+//     fontSize: 24,
+//     marginBottom: 24,
+//   },
+// })
