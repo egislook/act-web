@@ -2,12 +2,12 @@ import React from 'react'
 import Head from 'next/head'
 import App from 'next/app'
 import getConfig from 'next/config'
+import * as RN from 'react-native-web'
 import Actheme from 'actheme'
+Actheme.set({ color: { blue: 'yellow' }})
 
 const { publicRuntimeConfig = {} } = getConfig()
 // <ActStore init={init} initialState={{ ready: true }} config={config} router={router} actions={actions} name="App" />
-
-// typeof window !== 'undefined' && Actheme.set({ color: { blue: 'yellow' }})
 
 export default class extends App {
 	render() {

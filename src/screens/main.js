@@ -8,12 +8,12 @@ function MainScreen(props) {
       <Styled.Text>
         React Native for Web & Next.js
       </Styled.Text>
-      <Elems.Link style={style('c:blue')} href="/alternate">
+      <Elems.Link href="/alternate">
         Go to Alternate Screen
       </Elems.Link>
 
       <Styled.Cont>
-        <Styled.Text aria-level="2">
+        <Styled.Text className="WTF" aria-level="2">
           Subheader
         </Styled.Text>
       </Styled.Cont>

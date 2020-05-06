@@ -9,9 +9,9 @@ function MainScreen(props) {
       <Styled.Text>
         React Native for Web & Next.js
       </Styled.Text>
-      <Elems.Link style={style('c:blue')} href="/">
+      <Styled.Link href="/">
         Go back to Main Screen
-      </Elems.Link>
+      </Styled.Link>
 
       <Styled.Cont>
         <Styled.Text aria-level="2">
@@ -27,7 +27,8 @@ export default MainScreen
 const Styled = Actheme.create({
   Wrap: 'ai,jc:c fg:1',
   Cont: 'mt:s4',
-  Text: 'fs,mb:s6 fs:24'
+  Text: 'fs,mb:s6 fs:24',
+  Link: [Elems.Link, 'c:pink fb:normal fs:s5']
 })
 
 
