@@ -1,25 +1,20 @@
 import React from 'react'
-import Head from 'next/head'
-import App from 'next/app'
-import getConfig from 'next/config'
 import * as RN from 'react-native-web'
 import Actheme from 'actheme'
-Actheme.set({ color: { blue: 'yellow' }})
+import Actstore from 'actstore'
+import Cookies from 'js-cookie'
 
-const { publicRuntimeConfig = {} } = getConfig()
-// <ActStore init={init} initialState={{ ready: true }} config={config} router={router} actions={actions} name="App" />
+Actheme.set(process.env.theme)
 
-export default class extends App {
-	render() {
-		const { Component, pageProps, router = {}, init } = this.props
-		return <Component {...pageProps} init={init} />
-	}
-
-	static async getInitialProps({ Component, router, ctx }) {
-		const pageProps = Component.getInitialProps && await Component.getInitialProps(ctx) || {}
-		const { asPath } = ctx
-		const { version, env, theme } = publicRuntimeConfig || {}
-		const { route, query } = router
-		return { pageProps, route, query, asPath, init: { version, env, theme }, }
-	}
+export default ({ Component, pageProps }) => {
+	const { store, act } = Actstore({ actions, configs: process.env.configs, Cookies }, ['ready'])
+	React.useEffect(() => { act('APP_INIT') }, [])
+  return <Component {...pageProps} />
 }
+
+const actions = ({ store }) => ({
+  APP_INIT: async () => {
+    await store.set({ count: 1, ready: true })
+  },
+	APP_COUNT: () => store.set({ count: store.get('count') + 1 })
+})

@@ -1,1 +1,1 @@
-export { MainScreen as default } from '../src/screens/index'
+export { default } from '../src/screens/main'

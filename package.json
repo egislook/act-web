@@ -1,7 +1,7 @@
 {
-  "name": "betkh",
-  "version": "0.0.0",
-  "description": "",
+  "name": "act",
+  "version": "0.0.1",
+  "description": "React Native for Web with Actheme and Actstore",
   "main": "index.js",
   "scripts": {
     "start": "ENV=test next -p 8080",
@@ -17,9 +17,12 @@
   "license": "ISC",
   "dependencies": {
     "actheme": "0.0.21",
-    "bet": "file:./src/@bet",
+    "actstore": "0.0.32",
+    "fetchier": "0.0.30",
+    "js-cookie": "^2.2.1",
     "next": "^9.3.5",
     "next-pwa": "^2.3.3",
+    "pack": "file:./src/@pack",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-native-web": "^0.12.2"

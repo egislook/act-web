@@ -1,1 +1,1 @@
-export { AlternateScreen as default } from '../src/screens/index'
+export { default } from '../src/screens/alternate'
