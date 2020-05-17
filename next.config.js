@@ -1,5 +1,5 @@
 const webpack = require('webpack')
-const assetPrefix = !process.env.NODE_ENV || ('production' === process.env.NODE_ENV) ? '/bet' : ''
+const assetPrefix = !process.env.NODE_ENV || ('production' === process.env.NODE_ENV) ? '/act-web' : ''
 const withTM = require('next-transpile-modules')(['pack'])
 const package = require('./package.json')
 
