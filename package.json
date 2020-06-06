@@ -19,7 +19,7 @@
     "actheme": "0.0.30",
     "actstore": "0.0.32",
     "fetchier": "0.0.30",
-    "next": "^9.3.5",
+    "next": "^9.4.4",
     "pack": "file:./src/@pack",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
