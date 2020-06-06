@@ -1,6 +1,5 @@
 import React from 'react'
-import { Elems } from 'pack'
-import Actheme, { style } from 'actheme'
+import { Elems, Actheme } from 'pack'
 import Actstore from 'actstore'
 
 function MainScreen(props) {
@@ -9,7 +8,7 @@ function MainScreen(props) {
   return (
     <Styled.Wrap>
       <Styled.Text>{process.env.description}</Styled.Text>
-      <Elems.Link href="/alternate">
+      <Elems.Link href="/alternate" fustyle="ta:c">
         Go to Alternate Screen
       </Elems.Link>
       <Styled.Cont>

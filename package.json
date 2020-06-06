@@ -16,12 +16,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "actheme": "0.0.21",
+    "actheme": "0.0.30",
     "actstore": "0.0.32",
     "fetchier": "0.0.30",
-    "js-cookie": "^2.2.1",
     "next": "^9.3.5",
-    "next-pwa": "^2.3.3",
     "pack": "file:./src/@pack",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -31,5 +29,18 @@
     "babel-plugin-react-native-web": "^0.12.2",
     "next-transpile-modules": "^3.2.0",
     "serve": "^11.3.0"
+  },
+  "babel": {
+    "presets": [
+      "next/babel"
+    ],
+    "plugins": [
+      [
+        "react-native-web",
+        {
+          "commonjs": true
+        }
+      ]
+    ]
   }
 }

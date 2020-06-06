@@ -1,6 +1,5 @@
 import React from 'react'
-import { Elems } from 'pack'
-import Actheme, { style } from 'actheme'
+import { Elems, Actheme } from 'pack'
 import Actstore from 'actstore'
 
 function MainScreen(props) {

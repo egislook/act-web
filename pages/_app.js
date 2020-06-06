@@ -1,20 +1,16 @@
 import React from 'react'
 import * as RN from 'react-native-web'
-import Actheme from 'actheme'
 import Actstore from 'actstore'
-import Cookies from 'js-cookie'
-
-Actheme.set(process.env.theme)
+import Head from 'next/head'
+import Settings from 'pack/store'
 
 export default ({ Component, pageProps }) => {
-	const { store, act } = Actstore({ actions, configs: process.env.configs, Cookies }, ['ready'])
+	const { store, act } = Actstore(Settings, ['ready'])
 	React.useEffect(() => { act('APP_INIT') }, [])
-  return <Component {...pageProps} />
+  return <React.Fragment>
+		<Head>
+			<title>{process.env.name}</title>
+		</Head>
+		<Component {...pageProps} />
+	</React.Fragment>
 }
-
-const actions = ({ store }) => ({
-  APP_INIT: async () => {
-    await store.set({ count: 1, ready: true })
-  },
-	APP_COUNT: () => store.set({ count: store.get('count') + 1 })
-})
