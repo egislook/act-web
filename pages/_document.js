@@ -14,10 +14,7 @@ export default class MyDocument extends Document {
       <style dangerouslySetInnerHTML={{ __html }} />,
       StyleElements
     ]
-    console.log(
-      StyleElements.props.dangerouslySetInnerHTML.__html.length,
-      StyleElements.props.dangerouslySetInnerHTML.__html
-    );
+    console.log('rendered style length', StyleElements.props.dangerouslySetInnerHTML.__html.length)
     return { ...page, styles: React.Children.toArray(styles) };
   }
 
