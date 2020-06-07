@@ -1,0 +1,32 @@
+{
+  "name": "act",
+  "version": "0.0.6",
+  "description": "React Native for Web with Actheme and Actstore",
+  "scripts": {
+    "start": "ENV=test next -p 8080",
+    "start:win": "set ENV=test&& next -p 8080",
+    "build": "next build",
+    "export": "next export",
+    "serve": "serve ./out -p 8080",
+    "static": "npm run build && npm run export && npm run serve"
+  },
+  "dependencies": {
+    "pack": "file:./src/@pack",
+    "actheme": "0.0.30",
+    "actstore": "0.0.32",
+    "fetchier": "0.0.30",
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-native-web": "^0.12.3"
+  },
+  "babel": {
+    "presets": [
+      "next/babel"
+    ]
+  },
+  "devDependencies": {
+    "serve": "^11.3.2",
+    "next-transpile-modules": "^3.2.0"
+  }
+}
