@@ -2,8 +2,8 @@ name: Build & host at Firebase
 
 on:
   push:
-    branches:
-      - debug
+    tags:
+      - 'v*'
 
 jobs:
   build:
@@ -29,5 +29,4 @@ jobs:
       with:
         args: deploy --only hosting
       env:
-        PROJECT_ID: ${{ secrets.FIREBASE_APP_ID }}
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
