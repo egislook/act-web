@@ -1,6 +1,6 @@
 {
   "name": "act",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React Native for Web with Actheme and Actstore",
   "main": "index.js",
   "scripts": {
