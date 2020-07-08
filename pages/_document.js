@@ -1,8 +1,9 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import React from 'react'
 import { AppRegistry } from 'react-native'
+import Actheme from 'actheme'
 
-const __html = `#__next { display: flex; flex-direction: column; height: 100%; }`
+const nextStyle = `#__next { display: flex; flex-direction: column; height: 100%; }`
 
 export default class MyDocument extends Document {
   static async getInitialProps({ renderPage }) {
@@ -11,8 +12,8 @@ export default class MyDocument extends Document {
     const page = renderPage()
     const StyleElements = getStyleElement()
     const styles = [
-      <style dangerouslySetInnerHTML={{ __html }} />,
-      StyleElements
+      StyleElements,
+      <style dangerouslySetInnerHTML={{ __html: [nextStyle, Actheme.mediaRules()].join('\n') }} />
     ]
     console.log('rendered style length', StyleElements.props.dangerouslySetInnerHTML.__html.length)
     return { ...page, styles: React.Children.toArray(styles) };

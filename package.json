@@ -11,14 +11,15 @@
     "static": "npm run build && npm run export && npm run serve"
   },
   "dependencies": {
-    "pack": "file:./src/@pack",
-    "actheme": "0.0.30",
+    "@react-native-community/async-storage": "^1.11.0",
+    "actheme": "0.0.31",
     "actstore": "0.0.32",
     "fetchier": "0.0.30",
     "next": "^9.4.4",
+    "pack": "file:./src/@pack",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-native-web": "^0.12.3"
+    "react-native-web": "git@github.com:egislook/rnw.git"
   },
   "babel": {
     "presets": [
