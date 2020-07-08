@@ -19,7 +19,7 @@
     "pack": "file:./src/@pack",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-native-web": "git@github.com:egislook/rnw.git"
+    "react-native-web": "github:egislook/rnw.git"
   },
   "babel": {
     "presets": [
