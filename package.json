@@ -1,6 +1,6 @@
 {
   "name": "act",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "React Native for Web with Actheme and Actstore",
   "scripts": {
     "start": "ENV=test next -p 8080",
