@@ -4,7 +4,6 @@ import Actstore from 'actstore'
 
 function MainScreen(props) {
   const { store, action } = Actstore({ actions }, ['count'])
-  // const media = Actheme.media()
 
   return (
     <Styled.Wrap>
